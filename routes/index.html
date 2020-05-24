@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	
+		.form1{width: 320px;
+	height: 300px;
+	 
+	opacity: 0.9;
+	color: #fff;
+	top:50%;
+	left:20%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing:border-box;
+	padding: 70px 30px;}
+	.form1 input[type="submit"]
+{
+	border:none;
+	outline: none;
+	height: 40px;
+	width:100px;
+	background:#020024;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 10px; 
+}
+.form1 [type="text"], input[type="password"]
+{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline: none;
+	height: 40px;
+	color:#fff;
+	font-size: 16px;
+}
+.form1 p{
+
+	font-size: 24px;
+}
+.form1 input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color:#000; 
+
+}
+body{
+	
+	max-width: cover;
+	max-height: cover;
+	background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 15%, rgba(121,9,109,1) 35%, rgba(255,0,194,1) 100%);
+
+}
+.pa{
+
+	left:8%;
+	position: absolute;
+	top:4%;
+}
+.pa p{
+	
+	color: white;
+	font-size: 55px;
+}
+
+</style>
+	
+<link rel="icon" href="download.jpeg">
+
+<title>Appointer</title>
+</head>
+<body>
+	<div class="pa">
+	<p><b>Registration page</b></p></div>
+	
+	<div class="form1">
+	
+	
+		<table align="center" cellpadding="10" cellspacing="">
+ 
+
+	<form action="/api/form"  method="post">
+		<tr><td><p>Name:</p></td><td><input type="text" name="Name"  placeholder="Enter name" required><br></td></tr>
+		<tr><td><p>Password:</p></td><td><input type="Password" name="Password" placeholder="Enter password" required><br></td></tr></table>
+
+		<p align="center"><input type="submit" name="Submit" id="submit" ></p>
+	</form></div>
+
+</body>
+</html>
